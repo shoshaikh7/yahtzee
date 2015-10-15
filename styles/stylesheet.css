@@ -1,0 +1,54 @@
+/*Game Board Start*/
+#game-board {
+  border: 1px solid black;
+  width: 600px;
+  height: 400px;
+}
+/*Game Board End*/
+
+/*Category Board Start*/
+#category-board {
+  border: 1px solid red;
+  width: 250px;
+  height: 300px;
+  padding: 5px;
+}
+
+.categories {
+  font-size: 12px;
+  width: 90px;
+  margin: 0 auto;
+}
+
+.categories p {
+  display: inline-block;
+}
+
+.categories span {
+  float: right;
+  margin-top: 12px;
+}
+
+#left-column {
+  border: 1px solid rgb(168, 99, 212);
+  width: 120px;
+  display:inline-block;
+}
+
+#right-column {
+  border: 1px solid rgb(255, 99, 6);
+  width: 120px;
+  display:inline-block;
+}
+
+#yahtzee {
+  border: 1px solid blue;
+  width: 200px;
+  font-size: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 8px;
+}
+
+
+/*Category Board End*/

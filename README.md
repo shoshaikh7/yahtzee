@@ -1,1 +1,1 @@
-# yahtzee
+# Yahtzee!
