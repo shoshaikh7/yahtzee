@@ -5,7 +5,7 @@
 var rollCount = 0
 
 // Starts a new game, resetting some of the classes and score
-function newGame() {
+var newGame = function() {
 	$('.categories').each(function(){
 		$(this).removeClass('category-used');
 		$(this).find('span').text("0");
