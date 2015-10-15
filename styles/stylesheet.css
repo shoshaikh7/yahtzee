@@ -58,4 +58,8 @@
   width: 200px;
   font-size: 12px;
 }
+
+.category-used {
+  background-color: gray;
+}
 /*Category Board End*/
