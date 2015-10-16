@@ -43,7 +43,11 @@
 }
 
 .categories:hover {
-  
+
+}
+
+.highlight {
+  background-color: rgba(72, 222, 20, 0.66);
 }
 
 .category-used {
