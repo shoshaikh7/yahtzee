@@ -115,6 +115,11 @@ var checkOnes = function() {
 // Check categories
 var getScore = function () {
   checkOnes();
+  // checkTwos();
+  // checkThrees();
+  // checkFours();
+  // checkFives();
+  // checkSixes();
 };
 
 

@@ -12,7 +12,9 @@
   position: relative;
 }
 /*Game Board End*/
+
 /* ***************************************************** */
+
 /*Category Board Start*/
 #category-board {
   border: 1px solid red;
@@ -46,12 +48,12 @@
 
 }
 
-.highlight {
-  background-color: rgba(72, 222, 20, 0.66);
-}
-
 .category-used {
   border: 1px solid red;
+}
+
+.highlight {
+  background-color: rgba(72, 222, 20, 0.66);
 }
 
 #left-column {
@@ -74,7 +76,9 @@
 
 
 /*Category Board End*/
+
 /* ***************************************************** */
+
 /*Roller Button Start*/
 #roll-wrap {
 
@@ -99,7 +103,37 @@
   border: 1px solid rgb(106, 97, 99);
 }
 /*Roller Button End*/
+
 /* ***************************************************** */
+
+/*Score Board Start*/
+#score-board {
+  border: 1px solid pink;
+  width: 250px;
+  height: 300px;
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+  float: right;
+  display: inline-block;
+
+}
+
+.score-title {
+  border: 1px solid magenta;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.score-content h4{
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+/*Score Board End*/
+
+/* ***************************************************** */
+
 /*Dice Board Start*/
 #dice-board {
   border: 1px solid rgb(80, 190, 12);
@@ -131,4 +165,5 @@
 
 
 /*Dice Board End*/
+
 /* ***************************************************** */
