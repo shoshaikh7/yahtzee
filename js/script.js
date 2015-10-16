@@ -1,22 +1,6 @@
 var rollCount = 0
 
-
-// var rollTheDice = function() {
-//   var value = null;
-//   var diceCount = 1;
-//   for (i = 0; i < diceCount; i++) {
-//       value = Math.floor(Math.random() * 6) + 1;
-//   };
-//   document.getElementById('dice1').innerHTML = value;
-//   console.log(value)
-// };
-
-// var Dice = function(id) {
-//   this.id = id;
-//   this.value = Math.floor(Math.random() * 6) + 1;
-//   this.hold = false;
-// };
-
+// Dice array
 var dice = [
   {
     id: "die-1",
@@ -45,6 +29,7 @@ var dice = [
   }
 ];
 
+// Rolls Dice
 var rollDice = function() {
   for (var i = 0; i < dice.length; i++)
     if (dice[i].hold === null) {
@@ -52,6 +37,11 @@ var rollDice = function() {
       $('.die').eq(i).text(dice[i].value);
     };
 };
+
+// Gets the value of dice
+var diceValues = function() {
+	return [dice[0].value,dice[1].value,dice[2].value,dice[3].value,dice[4].value]
+}
 
 
 $(document).ready(function() {
@@ -64,30 +54,18 @@ $(document).ready(function() {
   // Hold Dice Event
   $("div.die").on('click', function(e) {
      var $selected = $(e.target);
-     $selected.addClass("held");
+     $selected.toggleClass("held");
      for (var i = 0; i < dice.length; i++) {
        if (dice[i].id == $selected.attr('id')) {
-         console.log("sup")
+         console.log("sup");
          if (dice[i].hold == null) {
            dice[i].hold = dice[i].value;
+         } else {
+           dice[i].hold = null;
          };
        };
      };
    });
-
-   $("div.die").off('click', function(e) {
-      var $selected = $(e.target);
-      $selected.removeClass("held");
-      dice.hold = null
-    });
-
-  //  $("div.die").unbind('click', function(e) {
-  //    var $selected = $(e.target);
-  //    if ($selected.hasClass('held')) {
-  //       $selected.removeClass('held');
-  //    };
-  //  };
-
 
    // Add class to a category that has been clicked on
      $("div.categories").on('click', function(e) {
@@ -96,37 +74,3 @@ $(document).ready(function() {
      });
 
 });
-
-
-
-
-//
-// // Starts a new game, resetting some of the classes and score
-// var newGame = function() {
-//   $('.categories').each(function() {
-//     $(this).removeClass('category-used');
-//     $(this).find('span').text("0");
-//   });
-//   calculateAll();
-// }
-//
-// $(document).ready(function() {
-//
-//   // Add class to a category that has been clicked on
-//   $("div.categories").on('click', function(e) {
-//     var $selected = $(e.target);
-//     $selected.addClass('category-used');
-//   });
-//
-//   $("div.dice").on('click', function(e) {
-//     var $selected = $(e.target);
-//     $selected.addClass('held');
-//   });
-//
-//   // Roll Dice Event
-//   $('#roller').on('click', function() {
-//     rollTheDice();
-//   });
-//
-//
-// })
