@@ -48,12 +48,13 @@
 
 }
 
-.category-used {
-  border: 1px solid red;
-}
-
 .highlight {
   background-color: rgba(72, 222, 20, 0.66);
+}
+
+.category-used {
+  border: 1px solid red;
+  background-color: gray;
 }
 
 #left-column {
