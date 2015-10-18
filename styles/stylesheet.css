@@ -15,6 +15,26 @@
 
 /* ***************************************************** */
 
+/* Round Counter Start */
+#round-counter {
+  border: 1px solid black;
+  display: inline-block;
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  position: absolute;
+  top: 40px;
+  right: 375px;
+
+}
+
+#round-counter h3 {
+  margin-top: 10px;
+  font-size: 30px;
+}
+/* Round Counter End*/
+
+/* ***************************************************** */
 /*Category Board Start*/
 #category-board {
   border: 1px solid red;
@@ -22,6 +42,7 @@
   height: 300px;
   padding: 15px;
   margin: 10px;
+  display: inline-block;
 }
 
 .categories {
@@ -87,21 +108,39 @@
 
 #roller {
   background-color: rgb(193, 30, 30);
-  border: 1px solid  rgb(70, 70, 70);
   border-radius: 16px;
   color: white;
-  padding: 5px;
-  width: 100px;
-  height: 40px;
+  padding: 2px;
+  width: 80px;
+  height: 30px;
   position:absolute;
-  right: 450px;
+  left: 400px;
   bottom: 260px;
+  text-align: center;
   font-size: 25px;
 }
 
 #roller:hover {
-  background-color: rgb(193, 69, 69);
-  border: 1px solid rgb(106, 97, 99);
+  border: 1px solid white;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+#roll-counter {
+  border: 4px solid rgb(219, 219, 219);
+  border-radius: 15px;
+  display: inline-block;
+  width: 30px;
+  height: 25px;
+  position:absolute;
+  right: 400px;
+  bottom: 262px;
+}
+
+#roll-counter h3 {
+  margin: 2px 5px;
+  color: rgba(45, 12, 205, 0.8);
+  text-align: center;
 }
 /*Roller Button End*/
 
@@ -154,14 +193,18 @@
   /*padding: 0px 30px;*/
   text-align: center;
   border: 3px solid black;
+  cursor: grab;
 }
 
 .die:hover {
-
+  color: white;
+  background-color: black;
 }
 
 .held {
   border: 4px solid red;
+  background-color: black;
+  color: white;
 }
 
 
